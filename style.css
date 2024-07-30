@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    font-family: azonix; 
+    font-size: 13px;
+    
+}
+@font-face {
+    font-family: azonix;
+    src: url(fonts/Jost-VariableFont_wght.ttf);
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    padding: none;
+    background-color: #272727;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.gridcontain {
+    justify-content: center;
+    background-color: #aaaaaa ;
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-columns:   23% 23% 23% 23% ;
+    justify-content: space-evenly;
+    grid-template-rows: 50% 50%;
+    grid-gap: 20px;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    
+}
+.dancard {
+    grid-column: 1/3 ;
+    grid-row: 1/2;
+    background-color: #7B66FF;
+    padding: 20px;
+    border-radius: 10px;
+}
+.joncard { 
+    padding: 20px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #435585;
+    border-radius: 10px;
+}
+.jencard { 
+    padding: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+}
+.patcard { 
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding: 20px;
+    background-color: #363062;
+    border-radius: 10px;
+}
+.kiracard {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    padding: 20px;
+    background-color: #FBF9F1;
+    border-radius: 10px;
+}
+h6, h5, p {
+    background-color: transparent;
+}
+.w2 { 
+    opacity: 70% ;
+}
+.w1 {
+    font-weight: 500;
+}
+.nigga {
+    display: grid;
+    grid-template-columns:   20% 75% ;
+
+
+
+}
+
+.pfp {
+    border-radius: 50%;
+    border: #818FB4 solid 2px;
+    width: 30px;
+    height: 30px;
+    grid-column: 1/1;
+}
+.n1 {
+    grid-column: 2/3;
+    margin-top: 0px;
+}
+.n2 {
+    font-size: 12px;
+    opacity: 70%;
+}
+
+@media (max-width: 900px) {
+    body{
+        padding: 10px;
+    }
+    
+
+    .gridcontain{
+        display:flex ;
+        width: 100%;
+        margin: 1px 0 0 0px;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+
+    .dancard,
+    .joncard,
+    .jencard,
+    .patcard,
+    .kiracard {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+
+
+
